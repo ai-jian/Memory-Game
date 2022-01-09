@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             score += 20
             result.innerHTML = score
             if (matchedCards.length === cardArray.length / 2) {
-                grid.innerHTML = 'Congratulations! You Won!'
+                grid.innerHTML = 'Congratulations, You Won!'
             }
 
         } else {
