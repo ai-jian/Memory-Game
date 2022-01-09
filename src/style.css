@@ -1,6 +1,7 @@
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: bisque;
-  color: dimgray;
+  color: darksalmon;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,11 +16,18 @@ body {
   border-radius: 23px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
+  color: darksalmon;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 img {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
+  transform: rotateY(180deg);
+  transition: all 1s ease-in-out;
 }

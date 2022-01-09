@@ -56,9 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(cardArray)
 
     const grid = document.querySelector('.grid')
+    const result = document.querySelector('#result')
     let chosenCards = []
     let chosenCardIds = []
+    let matchedCards = []
+    let score = 0
 
+    result.innerHTML = score
 
 
     function createBoard() {
@@ -68,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
-
         }
     }
 
@@ -76,18 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardId = this.getAttribute('data-id')
         chosenCardIds.push(cardId)
         chosenCards.push(cardArray[cardId].name)
-        console.log(chosenCardIds)
-        console.log(chosenCards)
         this.setAttribute('src', cardArray[cardId].img)
-        if (chosenCardIds.length === 2) {
-            setTimeout(checkForMatch(), 1000)
+        if (chosenCards.length === 2) {
+            setTimeout(checkForMatch, 500)
         }
     }
 
     function checkForMatch() {
         const cards = document.querySelectorAll('img')
-        let card1 = chosenCardIds[0]
-        let card2 = chosenCardIds[1]
+        const card1 = chosenCardIds[0]
+        const card2 = chosenCardIds[1]
         console.log(cards[card1])
         console.log(cards[card2])
 
@@ -97,17 +98,32 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[card2].setAttribute('src', 'src/images/memory-game.png')
         } else if (chosenCards[0] === chosenCards[1]) {
             console.log('matched')
-
+            cards[card1].setAttribute('src', 'src/images/blank.png')
+            cards[card2].setAttribute('src', 'src/images/blank.png')
+            cards[card1].removeEventListener('click', flipCard)
+            cards[card2].removeEventListener('click', flipCard)
+            matchedCards.push(chosenCards)
+            score += 20
+            result.innerHTML = score
+            if (matchedCards.length === cardArray.length / 2) {
+                grid.innerHTML = 'Congratulations! You Won!'
+            }
 
         } else {
             console.log('not match')
-            cards.forEach(function (card) { card.setAttribute('src', 'src/images/memory-game.png') })
-            // cards[card2].setAttribute('src', 'src/images/memory-game.png')
+            cards[card1].setAttribute('src', 'src/images/memory-game.png')
+            cards[card2].setAttribute('src', 'src/images/memory-game.png')
 
         }
         chosenCards.length = 0
         chosenCardIds.length = 0
+
+
     }
+
+
+
+
 
     createBoard()
 })
