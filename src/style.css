@@ -1,3 +1,25 @@
 body {
   background-color: bisque;
+  color: dimgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%vh;
+}
+
+.grid {
+  width: 1215px;
+  height: 915px;
+  border: 5px solid papayawhip;
+  border-radius: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
 }
