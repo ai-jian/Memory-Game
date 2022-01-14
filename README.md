@@ -1,5 +1,5 @@
 # Memory-Game
 
-This is a <a href="https://www.youtube.com/watch?v=Xm4BObh4MhI&t=31975s">Tutorial Practice</a>.
+This is a javascrpit game.
 
-Credit to Code with Ania Kubów
+Inspired by [Code with Ania Kubów](https://www.youtube.com/watch?v=Xm4BObh4MhI&t=31975s)
