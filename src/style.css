@@ -6,18 +6,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%vh;
+  height: 100%;
 }
 
 .grid {
-  width: 1215px;
-  height: 915px;
+  width: fit-content;
+  height: fit-content;
   border: 5px solid papayawhip;
   border-radius: 23px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(8, 1fr);
+  grid-auto-flow: row dense;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 3rem;
   gap: 5px;
   color: darksalmon;
   font-size: 5rem;

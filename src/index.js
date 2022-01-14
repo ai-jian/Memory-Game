@@ -26,6 +26,46 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'src/images/6.png'
         },
         {
+            name: 'seven',
+            img: 'src/images/7.png'
+        },
+        {
+            name: 'eight',
+            img: 'src/images/8.png'
+        },
+        {
+            name: 'nine',
+            img: 'src/images/9.png'
+        },
+        {
+            name: 'ten',
+            img: 'src/images/10.png'
+        },
+        {
+            name: 'eleven',
+            img: 'src/images/11.png'
+        },
+        {
+            name: 'twelve',
+            img: 'src/images/12.png'
+        },
+        {
+            name: 'thirteen',
+            img: 'src/images/13.png'
+        },
+        {
+            name: 'fourteen',
+            img: 'src/images/14.png'
+        },
+        {
+            name: 'fifteen',
+            img: 'src/images/15.png'
+        },
+        {
+            name: 'sixteen',
+            img: 'src/images/16.png'
+        },
+        {
             name: 'one',
             img: 'src/images/1.png'
         },
@@ -48,6 +88,46 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'six',
             img: 'src/images/6.png'
+        },
+        {
+            name: 'seven',
+            img: 'src/images/7.png'
+        },
+        {
+            name: 'eight',
+            img: 'src/images/8.png'
+        },
+        {
+            name: 'nine',
+            img: 'src/images/9.png'
+        },
+        {
+            name: 'ten',
+            img: 'src/images/10.png'
+        },
+        {
+            name: 'eleven',
+            img: 'src/images/11.png'
+        },
+        {
+            name: 'twelve',
+            img: 'src/images/12.png'
+        },
+        {
+            name: 'thirteen',
+            img: 'src/images/13.png'
+        },
+        {
+            name: 'fourteen',
+            img: 'src/images/14.png'
+        },
+        {
+            name: 'fifteen',
+            img: 'src/images/15.png'
+        },
+        {
+            name: 'sixteen',
+            img: 'src/images/16.png'
         }
     ]
 
